@@ -12,12 +12,16 @@ void showDialogSingleButton(BuildContext context, String title, String message, 
         content: new Text(message),
         actions: <Widget>[
           // usually buttons at the bottom of the dialog
-          new FlatButton(
-            child: new Text(buttonLabel),
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-          ),
+           Container(
+             margin: EdgeInsets.all(20),
+             child : TextButton(
+               child: new Text(buttonLabel),
+               onPressed: () {
+                 Navigator.of(context).pop();
+               },
+             ),
+           )
+
         ],
       );
     },

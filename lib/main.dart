@@ -1,5 +1,6 @@
-import 'package:day13/Animation/FadeAnimation.dart';
 import 'package:flutter/material.dart';
+
+import 'Animation/FadeAnimation.dart';
 
 void main() => runApp(
   MaterialApp(
